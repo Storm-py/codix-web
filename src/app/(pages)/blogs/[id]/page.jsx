@@ -14,7 +14,7 @@ const BlogDetailPage = ({params}) => {
 
     const fetchBlog = async () => {
       try {
-        const response = await fetch(`${process.env.SERVER_URL}/api/create-blog/${id}`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/create-blog/${id}`);
         if (!response.ok) throw new Error("Failed to fetch blog content");
         
         const data = await response.json();

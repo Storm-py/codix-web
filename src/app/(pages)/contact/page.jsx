@@ -60,7 +60,7 @@ export default function ContactUs() {
 
     try {
       contactSchema.parse(formData);
-      const res = await fetch(`${process.env.SERVER_URL}/api/contact`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

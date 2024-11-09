@@ -17,7 +17,7 @@ const ServicesPage = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch(`${process.env.SERVER_URL}/api/create-service`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/create-service`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

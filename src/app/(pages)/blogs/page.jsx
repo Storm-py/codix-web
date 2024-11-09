@@ -12,7 +12,7 @@ const BlogsPage = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch(`${process.env.SERVER_URL}/api/create-blog`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/create-blog`);
         if (!response.ok) throw new Error("Failed to fetch blogs");
         
         const data = await response.json();

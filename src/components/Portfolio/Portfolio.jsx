@@ -28,7 +28,7 @@ const Portfolio = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch(`${process.env.SERVER_URL}/api/create-portfolio`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/api/create-portfolio`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
