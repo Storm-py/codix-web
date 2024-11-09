@@ -39,26 +39,30 @@ const ServicesPage = () => {
   }, [setServices])
 
   if (isLoading) {
-    return <div className='w-full flex items-center justify-between'>
-    <div className="flex w-52 flex-col gap-4 items-center justify-center">
-    <div className="skeleton h-32 w-full"></div>
-    <div className="skeleton h-4 w-28"></div>
-    <div className="skeleton h-4 w-full"></div>
-    <div className="skeleton h-4 w-full"></div>
-  </div>
-  <div className="flex w-52 flex-col gap-4 items-center justify-center">
-    <div className="skeleton h-32 w-full"></div>
-    <div className="skeleton h-4 w-28"></div>
-    <div className="skeleton h-4 w-full"></div>
-    <div className="skeleton h-4 w-full"></div>
-  </div>
-  <div className="flex w-52 flex-col gap-4 items-center justify-center">
-    <div className="skeleton h-32 w-full"></div>
-    <div className="skeleton h-4 w-28"></div>
-    <div className="skeleton h-4 w-full"></div>
-    <div className="skeleton h-4 w-full"></div>
-  </div>
-    </div>
+    return (
+      <div className="w-full flex items-center justify-around gap-5">
+        <div className="flex w-64 flex-col gap-4 items-center justify-center p-4">
+          <div className="skeleton h-32 w-full rounded-lg mb-2 animate-pulse"></div>
+          <div className="skeleton h-4 w-28 mb-2 rounded-lg animate-pulse"></div>
+          <div className="skeleton h-4 w-full rounded-lg mb-2 animate-pulse"></div>
+          <div className="skeleton h-4 w-full rounded-lg animate-pulse"></div>
+        </div>
+  
+        <div className="flex w-64 flex-col gap-4 items-center justify-center p-4">
+          <div className="skeleton h-32 w-full rounded-lg mb-2 animate-pulse"></div>
+          <div className="skeleton h-4 w-28 mb-2 rounded-lg animate-pulse"></div>
+          <div className="skeleton h-4 w-full rounded-lg mb-2 animate-pulse"></div>
+          <div className="skeleton h-4 w-full rounded-lg animate-pulse"></div>
+        </div>
+  
+        <div className="flex w-64 flex-col gap-4 items-center justify-center p-4">
+          <div className="skeleton h-32 w-full rounded-lg mb-2 animate-pulse"></div>
+          <div className="skeleton h-4 w-28 mb-2 rounded-lg animate-pulse"></div>
+          <div className="skeleton h-4 w-full rounded-lg mb-2 animate-pulse"></div>
+          <div className="skeleton h-4 w-full rounded-lg animate-pulse"></div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
